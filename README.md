@@ -55,5 +55,6 @@ When endpoint:-/getwords/:id is called then the :id denotes the top n words to b
 This is frontend of application<br>
 <br>
 
-![Screenshot from 2019-06-26 15-01-37](https://user-images.githubusercontent.com/37747717/60168934-59d63a80-9823-11e9-8f2c-7a2b53a7097f.png)
+![Screenshot from 2019-06-26 15-05-13](https://user-images.githubusercontent.com/37747717/60169158-d10bce80-9823-11e9-96de-c0e7c149da3b.png)
+
 Search Button will show top n words types in input field.Show all words will show all words sorted in descending order.
