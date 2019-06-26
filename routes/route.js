@@ -81,6 +81,7 @@ function extractwords(x) {
       temp = temp + x[q];
     }
     else {
+    
       if (temp == 'terriblytinytales') {
         if (words['terribly']) {
           words['terribly']++;
@@ -143,6 +144,7 @@ function extractwords(x) {
       }
       temp = '';
     }
+    
   }
   list.push(temp)
 }
@@ -217,12 +219,9 @@ function testwords(x) {
 
 request.get('https://terriblytinytales.com/test.txt').on('data', function (data) {
   content = data.toString().replace(/\n/g, " ").split(' ')
-
   let linkstest = [];
-
   for (var i = 0; i < content.length; i++) {
     if ((email.test(content[i]) || links.test(content[i]) || links2.test(content[i]) || links3.test(content[i]) || slashes.test(content[i]) || atrate.test(content[i]) || das.test(content[i]))) {
-      console.log(content[i])
       extractwords(content[i])
     }
   }
@@ -234,6 +233,7 @@ request.get('https://terriblytinytales.com/test.txt').on('data', function (data)
   }
   delete (words['']);
   words = sortProperties(words)
+  console.log(words)
 })
 
 
